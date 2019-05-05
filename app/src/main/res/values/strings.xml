@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Feedback</string>
+
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="contact">Contact</string>
+    <string name="dob">Date of birth</string>
+</resources>

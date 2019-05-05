@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/formDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:text="Form Detail"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:text="Name:  "
+            android:textAlignment="textEnd"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <EditText
+            android:id="@+id/form_title"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter the form title"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:text="Describe: "
+            android:textAlignment="textEnd"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter the form description"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fieldDetail"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Field Detail below"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:onClick="AddField"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Add New Field"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="AddForm"
+        android:text="Add Form"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

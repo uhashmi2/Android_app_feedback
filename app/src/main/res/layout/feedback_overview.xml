@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <ImageView
+        android:id="@+id/top_icon"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_survey_form" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        android:text="Would you like to take a minute and provide us your valuable feedback?"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/continu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="Continue"
+        android:textColor="@drawable/textcolor"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="Dismiss"
+        android:textColor="@drawable/textcolor"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/bottom_icon"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:src="@drawable/foodbucket" />
+</RelativeLayout>

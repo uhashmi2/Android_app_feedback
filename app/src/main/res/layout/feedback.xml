@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/formDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Form Detail"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <TextView
+            android:id="@+id/form_title"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter the form title"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter the form description"
+            android:inputType="textMultiLine"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fieldDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Field Detail"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

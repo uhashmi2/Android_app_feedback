@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Start Creating Form Below"
+        android:textAlignment="textStart"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="CreateForm"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Create form"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="FormList"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Current Listing"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="App Created by Muhammad Usman"
+        android:textAlignment="textEnd"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textStyle="bold|italic" />
+
+
+</LinearLayout>
